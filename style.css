@@ -1373,7 +1373,6 @@ div.wpcf7-response-output { margin-left: 0; margin-right }
 }
 
 @media only screen and (max-width: 767px) {
-	#top-bar .top-bar-content { display: none; }
 	#top-bar-inner { padding: 10px 0; }
 	#top-bar .top-bar-socials { width: 100%; text-align: center; }
 	#top-bar .top-bar-socials .icons a { font-size: 14px; }
@@ -1454,4 +1453,8 @@ only screen and (                min-resolution: 2dppx){
 
 #about .wprt-headings .thumb {
 	margin-top: 30px;
+}
+
+.project-image {
+	max-height: 250px;
 }

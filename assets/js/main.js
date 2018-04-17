@@ -279,7 +279,7 @@
             var dateFormat = {weeday: 'short', year: 'numeric', month: 'short', day: 'numeric'};
 
             $('.project-image > img').each(function (index) {
-                $(this).attr('src', instaFeed[index]['images']['standard_resolution']['url']);
+                $(this).attr('src', instaFeed[index]['images']['low_resolution']['url']);
             });
 
             $('.project-description').each(function (index) {
