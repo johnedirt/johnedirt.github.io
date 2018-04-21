@@ -1,8 +1,8 @@
 <?php
-define( "WEBMASTER_EMAIL", 'your-email@domain.com' );
+define( "WEBMASTER_EMAIL", 'patrick@toggledev.com' );
 
 $error = false;
-$fields = array( 'name', 'email', 'subject', 'message' );
+$fields = array( 'name', 'subject', 'email', 'phone', 'message' );
 
 foreach ( $fields as $field ) {
 	if ( empty( $_POST[$field] ) || trim( $_POST[$field] ) == '' )
@@ -11,8 +11,9 @@ foreach ( $fields as $field ) {
 
 if ( ! $error ) {
 	$name = stripslashes( $_POST['name'] );
-	$email = trim( $_POST['email'] );
 	$subject = stripslashes( $_POST['subject'] );
+	$email = trim( $_POST['email'] );
+	$message = stripslashes( $_POST['phone'] );
 	$message = stripslashes( $_POST['message'] );
 
 	$mail = @mail( WEBMASTER_EMAIL, $subject, $message,
