@@ -16,7 +16,7 @@ var RevSlider = function() {
                     startheight:650,
                     fullWidth:"on",
                     dottedOverlay: "none",
-                    delay: 5000,
+                    delay: 7000,
                     navigation: {
                         keyboardNavigation: "on",
                         keyboard_direction: "horizontal",
