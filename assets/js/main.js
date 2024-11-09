@@ -259,36 +259,6 @@
 
     }; // end wprtTheme
 
-    /*
-    var feed = new Instafeed({
-        get: 'user',
-        userId: 1551461744,
-        accessToken: '1551461744.31e9c58.c26207a638034fa1b6fa98c3f6ffba99',
-        sortBy: 'most-recent',
-        limit: 8,
-        resolution: 'low_resolution',
-        clientId: '31e9c58b9e48470d83252467c1fa5d89'
-    });
-    */
-    $.ajax({
-        url: 'https://api.instagram.com/v1/users/self/media/recent/?access_token=1551461744.31e9c58.c26207a638034fa1b6fa98c3f6ffba99&callback=?',
-        type: 'GET', 
-        dataType: 'jsonp', 
-        success: function (data) {
-            var instaFeed = data.data;
-            var dateFormat = {weeday: 'short', year: 'numeric', month: 'short', day: 'numeric'};
-
-            $('.project-image > img').each(function (index) {
-                $(this).attr('src', instaFeed[index]['images']['low_resolution']['url']);
-            });
-
-            $('.project-description').each(function (index) {
-                $(this).text(instaFeed[index]['caption']['text']);
-                $(this).attr('href', "" + instaFeed[index]['link'])
-            })
-        }
-    });
-
     wprtTheme.init();
     // feed.run();
 
