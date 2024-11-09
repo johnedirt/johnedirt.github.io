@@ -111,7 +111,7 @@ td { padding: 8px 12px; }
 embed,
 iframe,
 object,
-video { margin-bottom: 20px; max-width: 100%; vertical-align: middle; }
+video { max-width: 100%; vertical-align: middle; }
 p > embed,
 p > iframe,
 p > object,
@@ -726,7 +726,7 @@ body.page #main-content { padding-top: 0; padding-bottom: 0; }
 
 /* Header fixed */
 #site-header.is-fixed,
-.site-navigation-wrap.is-fixed { position: fixed; left: 0; top: 0; width: 100%; z-index: 9989; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); -webkit-animation-name: menu_sticky; animation-name: menu_sticky; -webkit-animation-duration: 0.70s; animation-duration: 0.70s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
+.site-navigation-wrap.is-fixed { position: fixed; left: 0; top: 0; width: 100%; z-index: 100; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); -webkit-animation-name: menu_sticky; animation-name: menu_sticky; -webkit-animation-duration: 0.70s; animation-duration: 0.70s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; }
 .header-style-3 #site-header .site-navigation-wrap.is-fixed .inner { -webkit-transform: translate3d(-50%,0,0); -moz-transform: translate3d(-50%,0,0); transform: translate3d(-50%,0,0); }
 #site-header.is-fixed #site-header-inner { padding-top: 0; padding-bottom: 0; }
 @-webkit-keyframes menu_sticky { 0% { margin-top:-120px; } 50% { margin-top: -60px; } 100% { margin-top: 0; } }
